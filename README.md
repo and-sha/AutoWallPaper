@@ -1,7 +1,7 @@
 # Auto WallPaper
 
 Automatically downloads wall papers from https://alpha.wallhaven.cc/
-![](https://media.giphy.com/media/xVu6vxIZzjeJ1aMRhl/giphy.gif)
+![](giphy.gif)
 ## Requirements
 - Python3.7 
 - xfce
