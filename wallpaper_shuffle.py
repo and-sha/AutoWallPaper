@@ -6,13 +6,13 @@ import configparser
 
 
 config = configparser.ConfigParser()
-config_file = "/home/cloud/.personal/AutoWallPaper/wp.conf"
+config_file = "/home/andysha/wp/wp.conf"
 config.read(config_file)
 
 DIR = config.get('config', 'directory')
 
 
-cmd = "gsettings set org.gnome.desktop.background picture-uri file://"
+cmd = "./xfcewphelper.sh"
 onlyfiles = [f for f in listdir(DIR) if isfile(join(DIR, f))]
 full_dir = []
 for item in onlyfiles:
@@ -20,5 +20,5 @@ for item in onlyfiles:
 
 
 paper = choice(full_dir)
-execute = f"{cmd}{paper}"
+execute = f"{cmd} {paper}"
 system(execute)
